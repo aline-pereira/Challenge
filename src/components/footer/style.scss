@@ -1,0 +1,92 @@
+.comp-footer-container {
+    background-color: #000000;
+
+    &__newsletter {
+        padding: 132px 382px;
+        &-title {
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ffffff;
+                padding-bottom: 24px;
+                position: relative;
+
+                &::before {
+                    content: "//";
+                    position: absolute;
+                    color: #03ffa5;
+                    left: -10%;
+                }
+            }
+        }
+
+        &-form {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #03ffa5;
+            width: 90%;
+            text-align: center;
+
+            input {
+                background-color: transparent;
+                padding-bottom: 10px;
+                border: 0;
+                width: 100%;
+
+                &::placeholder {
+                    color: #ffffff;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+            }
+
+            button {
+                line-height: 40px;
+                font-weight: bold;
+                text-transform: uppercase;
+                background-color: transparent;
+                color: #03ffa5;
+                padding-bottom: 10px;
+                border: 0;
+            }
+        }
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 208px;
+
+        &-social {
+            a {
+                width: 32px;
+                height: 32px;
+                padding: 0 20px;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .comp-footer-container {
+        &__newsletter {
+            padding: 80px 30px;
+        }
+
+        &__contact {
+            padding: 30px 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .comp-footer-container {
+        &__newsletter {
+            padding: 80px 60px;
+        }
+    }
+}

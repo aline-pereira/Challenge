@@ -118,8 +118,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="comp-product-container__aboutUs">
-        <div>
+      <div className="comp-aboutUs-container">
+        <div className="comp-aboutUs-container-text">
           <h1>Olá, somos A Jüssi</h1>
           <p>
             A Jüssi é uma agência integrante do grupo global WPP que vem há 10
@@ -130,23 +130,22 @@ function App() {
           </p>
           <Button buttonTitle="Conheça a Jussi" />
         </div>
-        <div>
+        <div className="comp-aboutUs-container-image">
           <img src={Jussi} alt="Sobre nós" />
         </div>
       </div>
-      <div className="comp-product-container__email">
-        <div>
+      <div className="comp-email-container">
+        <div className="comp-email-container-text">
           <h1>
             Essa loja foi construída usando uma das nossas soluções da
             plataforma VTEX. tenha a sua.
           </h1>
           <p>Entre em contato</p>
-          <a href="https://jussi.com.br/">
-            <h3>comercial@jussi.com.br</h3>
-          </a>
+          <h3 href="https://jussi.com.br/">
+            <a>comercial@jussi.com.br</a>
+          </h3>
         </div>
       </div>
-
       <Footer />
     </div>
   );
