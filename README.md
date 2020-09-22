@@ -1,6 +1,6 @@
 ## Resolução 💻📚
 
-- A resolução do problema foi feita em React.JS, tecnologia que está super em alta no mercado, e que também está no meu roadmap de estudos.
+- A resolução do problema foi feita em React.JS,tecnologia que também está no meu roadmap de estudos.
 - Foram criados componentes Banner, Button, Cards, Footer e Header.
 - Utilizei algumas bibliotecas para facilitar o trabalho, tais como: 
  - Sass como pré processador css.
