@@ -24,17 +24,17 @@ const Banner = ({ title, bannerText }) => {
           <Cards
             sourceImage={Geladeira}
             buttonText="Mais Detalhes"
-            className="comp-banner-container__second-colum-item1"
+            className="second-colum-item1"
           />
           <Cards
             sourceImage={Batedeira}
             buttonText="Comprar em 12x"
-            className="comp-banner-container__second-colum-item2"
+            className="second-colum-item2"
           />
           <Cards
             sourceImage={Whisky}
             buttonText="Adicionar á sacola"
-            className="comp-banner-container__second-colum-item3"
+            className="second-colum-item3"
           />
         </div>
       </div>

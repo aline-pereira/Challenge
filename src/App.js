@@ -16,105 +16,81 @@ function App() {
         bannerText="A Jüssi é especialista na criação de lojas usando a plataforma VTEX. Precisa criar sua loja ou migrar de plataforma?"
       />
       <div className="comp-product-container">
-        <div className="comp-product-container__title">
-          <h1>Nossas soluções</h1>
-        </div>
-        <div className="comp-product-container__products">
-          <div className="comp-product-container__products-item">
-            <p className="comp-product-container__products-item-title">P1</p>
-            <p className="comp-product-container__products-item-name">
-              Nome do Produto #1
-            </p>
-            <p className="comp-product-container__products-item-description">
-              Descrição do produto #1
-            </p>
-            <ul className="comp-product-container__products-list">
-              <li className="comp-product-container__products-list-item">
-                Feature 1
-              </li>
-              <li className="comp-product-container__products-list-item">
-                Feature 2
-              </li>
-              <li className="comp-product-container__products-list-item">
-                Feature 3
-              </li>
-            </ul>
-            <Button
-              buttonTitle="Ver solução"
-              className="comp-product-container__products-button"
-            />
+        <div className="comp-product-container__our-soluctions">
+          <div className="comp-product-container__our-soluctions__title">
+            <h1>
+              NOSSAS SOLUÇÕES
+              </h1>
           </div>
-          <div className="comp-product-container__products-item">
-            <p className="comp-product-container__products-item-title">P2</p>
-            <p className="comp-product-container__products-item-name">
-              Nome do Produto #2
-            </p>
-            <p className="comp-product-container__products-item-description">
-              Descrição do produto #2
-            </p>
-            <ul className="comp-product-container__products-list">
-              <li className="comp-product-container__products-list-item">
-                Feature 1
-              </li>
-              <li className="comp-product-container__products-list-item">
-                Feature 2
-              </li>
-              <li className="comp-product-container__products-list-item">
-                Feature 3
-              </li>
-            </ul>
-            <Button
-              buttonTitle="Ver solução"
-              className="comp-product-container__products-button"
-            />
-          </div>
-          <div className="comp-product-container__products-item">
-            <p className="comp-product-container__products-item-title">P3</p>
-            <p className="comp-product-container__products-item-name">
-              Nome do Produto #3
-            </p>
-            <p className="comp-product-container__products-item-description">
-              Descrição do produto #3
-            </p>
-            <ul className="comp-product-container__products-list">
-              <li className="comp-product-container__products-list-item">
-                Feature 1
-              </li>
-              <li className="comp-product-container__products-list-item">
-                Feature 2
-              </li>
-              <li className="comp-product-container__products-list-item">
-                Feature 3
-              </li>
-            </ul>
-            <Button
-              buttonTitle="Ver solução"
-              className="comp-product-container__products-button"
-            />
-          </div>
-          <div className="comp-product-container__products-item">
-            <p className="comp-product-container__products-item-title">P4</p>
-            <p className="comp-product-container__products-item-name">
-              Nome do Produto #4
-            </p>
-            <p className="comp-product-container__products-item-description">
-              Descrição do produto #4
-            </p>
-            <ul className="comp-product-container__products-list">
-              <li className="comp-product-container__products-list-item">
-                Feature 1
-              </li>
-              <li className="comp-product-container__products-list-item">
-                Feature 2
-              </li>
-              <li className="comp-product-container__products-list-item">
-                Feature 3
-              </li>
-            </ul>
-            <Button
-              buttonTitle="Ver solução"
-              className="comp-product-container__products-button"
-            />
+          <div className="comp-product-container__our-soluctions__items">
+            <div className="comp-product-container__our-soluctions__items__content">
+              <div className="comp-product-container__our-soluctions__items__content--header">
+                <h1>P1</h1>
+              </div>
+              <div className="comp-product-container__our-soluctions__items__content--middle">
+                <strong>Nome do Produto #1</strong>
+                <p>Descrição do produto #1</p>
+                <ul>
+                  <li>• Feature 1</li>
+                  <li>• Feature 2</li>
+                  <li>• Feature 3</li>
+                </ul>
+              </div>
+              <div className="comp-product-container__our-soluctions__items__content--footer">
+                <button>Ver solução</button>
+              </div>
+            </div>
+            <div className="comp-product-container__our-soluctions__items__content">
+              <div className="comp-product-container__our-soluctions__items__content--header">
+                <h1>P2</h1>
+              </div>
+              <div className="comp-product-container__our-soluctions__items__content--middle">
+                <strong>Nome do Produto #1</strong>
+                <p>Descrição do produto #1</p>
+                <ul>
+                  <li>• Feature 1</li>
+                  <li>• Feature 2</li>
+                  <li>• Feature 3</li>
+                </ul>
+              </div>
+              <div className="comp-product-container__our-soluctions__items__content--footer">
+                <button>Ver solução</button>
+              </div>
+            </div>
+            <div className="comp-product-container__our-soluctions__items__content">
+              <div className="comp-product-container__our-soluctions__items__content--header">
+                <h1>P3</h1>
+              </div>
+              <div className="comp-product-container__our-soluctions__items__content--middle">
+                <strong>Nome do Produto #1</strong>
+                <p>Descrição do produto #1</p>
+                <ul>
+                  <li>• Feature 1</li>
+                  <li>• Feature 2</li>
+                  <li>• Feature 3</li>
+                </ul>
+              </div>
+              <div className="comp-product-container__our-soluctions__items__content--footer">
+                <button>Ver solução</button>
+              </div>
+            </div>
+            <div className="comp-product-container__our-soluctions__items__content">
+              <div className="comp-product-container__our-soluctions__items__content--header">
+                <h1>P4</h1>
+              </div>
+              <div className="comp-product-container__our-soluctions__items__content--middle">
+                <strong>Nome do Produto #1</strong>
+                <p>Descrição do produto #1</p>
+                <ul>
+                  <li>• Feature 1</li>
+                  <li>• Feature 2</li>
+                  <li>• Feature 3</li>
+                </ul>
+              </div>
+              <div className="comp-product-container__our-soluctions__items__content--footer">
+                <button>Ver solução</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

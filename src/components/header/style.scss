@@ -4,6 +4,17 @@
     align-items: center;
     padding: 15px 50px;
 
+    .menu-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        img {
+            width: 100px;
+        }
+    }
+
     .comp-header-items-left, .comp-header-items-right {
         ul {
             display: flex;

@@ -1,71 +1,77 @@
 .comp-product-container {
-    padding: 0 125px;
-    &__title {
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 56px 0 24px 30px;
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
     
-            &::before {
-                content: '//';
+    &__our-soluctions {
+        padding: 56px;
+
+        &__title {
+            margin-left: 7%;
+            position: relative;
+
+            &:before {
+                content: "//";
                 position: absolute;
-                color: #03FFA5;
-                left: 9%;
-            }
-        }
-    }
-
-    &__products {
-        display: flex;
-        justify-content: space-around;
-
-        &-item {
-            border: 1px solid #F2F2F2;
-            padding-left: 16px;
-
-            &-title {
-                width: 100px;
-                height: 100px;
-                background-color: #F2F2F2;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                left: -35px;
                 font-size: 32px;
-                font-weight: 500;
-                margin: 16px 0 53px 0px;
-            }
-
-            &-name {
-                line-height: 24px;
-                font-weight: 500;
-            }
-
-            &-description {
-                font-size: 12px;
-                font-weight: 500;
-                color: #EE0E7D;
-                padding: 16px 0;
+                color: #03FFA5;
             }
         }
 
-        &-list-item {
-            font-size: 12px;
-            line-height: 18px;
-            font-weight: 500;
-            list-style: disc;
-            margin-left: 16px;
-        }
+        &__items {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
 
-        Button {
-            font-weight: 500;
-            line-height: 24px;
-            border-radius: 6px;
-            padding: 12px 64px;
-            background-color: #03FFA5;
-            border: none;
-            margin: 16px 0;
+            &__content {
+                border: 1px solid #F2F2F2;
+                box-sizing: border-box;
+                border-radius: 4px;
+                margin: 35px;
+                padding:  10px 30px;
+
+                &--footer {
+                    button {
+                        background-color: #03FFA5;
+                        border-radius: 6px;
+                        border: 0;
+                        width: 100%;
+                        height: 48px;
+                        font-weight: 500;
+                    }
+                }
+
+                &--middle {
+                    strong {
+                        font-weight: 500;
+                    }
+
+                    p {
+                        margin: 15px 0;
+                        color: #EE0E7D;
+                    }
+
+                    ul {
+                        margin-bottom: 15px;
+
+                        li {
+                            color: #5B5B5B
+                        }
+                    }
+                }
+
+                &--header {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background: #F2F2F2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 32px;
+                }
+            }
         }
     }
 }
@@ -73,10 +79,11 @@
 .comp-aboutUs-container {
     display: flex;
     justify-content: space-around;
-    margin: 136px 125px 64px 125px;
+    padding: 80px;
+    background: linear-gradient(to right,#fff 60%,#f5f5f5 50%);
 
     &-text {
-        width: 26%;
+        width: 17%;
         h1 {
             font-size: 32px;
             line-height: 40px;
@@ -96,29 +103,12 @@
             border-radius: 8px;
             margin-top: 40px;
             background-color: transparent;
+            border: 1px solid #000;
+            font-weight: bold;
         }
     }
 
-    &-image {
-        width: 56%;
-        position: relative;
-
-        &::after {
-            content: "";
-            width: 710px;
-            height: 648px;
-            background: #F2F2F2;
-            position: absolute;
-            left: 13%;
-            z-index: -1;
-            top: -10%;
-        }
-        img {
-            width: 676px;
-            height: 520px;
-            border-radius: 4px;
-        }
-    }
+    
 }
 
 .comp-email-container {

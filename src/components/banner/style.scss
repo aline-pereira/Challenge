@@ -1,23 +1,53 @@
 .comp-banner-container {
     background-color: #03FFA5;
     display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap ;
     justify-content: space-around;
-    padding: 60px 100px;
+    align-items: center;
+    padding: 60px 50px;
+    height: 560px;
+
+    @media (max-width: 1023px) {
+        max-width: 100%;
+        height: auto;
+        padding: 50px ;
+     }
 
     &__first-colum {
-        max-width: 38%;
+        max-width: 40%;
+        padding-left: 50px;
+        margin-left: 50px;
+
+        @media (max-width: 1023px) {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        @media (max-width: 1023px) {
+           max-width: 100%;
+        }
+        
         h1 {
             font-size: 64px;
             text-transform: uppercase;
             font-weight: 500;
             position: relative;
 
+            @media (max-width: 1023px) {
+                font-size: 34px;                
+             }
+
             &::before {
                 content: '//';
                 position: absolute;
                 font-size: 64px;
                 color: #ffffff;
-                left: -20%;
+                left: -13%;
+
+                @media (max-width: 1023px) {
+                    content: none;            
+                 }
             }
         }
 
@@ -38,6 +68,31 @@
     &__second-colum {
         position: relative;
         display: flex;
+
+        @media (max-width: 1023px) {
+            display: none;
+        }
+
+        .comp-card-container {
+            position: absolute;
+        }
+
+        .second-colum-item1 {
+            top: -100px;
+            left: -400px;
+        }
+
+        .second-colum-item2 {
+            top: -230px;
+            left: -250px;
+            height: 230px;
+            z-index: 1;
+        }
+
+        .second-colum-item3 {
+            top: -70px;
+            left: -120px;
+        }
 
         Button {
             background-color: transparent;
@@ -61,11 +116,17 @@
 
 .comp-marcas-container {
     width: 100%;
-    height: 80px;
+    height: auto;
     display: flex;
+    flex-flow: row wrap ;
     justify-content: space-around;
     background-color: #F2F2F2;
-    padding: 28px 0;
+    align-items: center;
+    padding: 28px 300px;
+
+    @media (max-width: 1023px) {
+        padding: 28px 0px;
+    }
 
 
     p {
